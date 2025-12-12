@@ -154,11 +154,10 @@ python infer_on_video_bilstm.py
 
 Open **[`final-project.ipynb`](./final-project.ipynb)** and edit:
 ```python
-MODEL_PATH   = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/best.pt"     
-SCALER_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/scaler.joblib"
-LABELS_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/labels.json"  
-INPUT_VIDEO  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/Videos/Squat.mp4"  
-
+MODEL_PATH  = "runs/train_bilstm/best.pt"
+SCALER_PATH = "runs/train_bilstm/scaler.joblib"
+LABELS_PATH = "runs/train_bilstm/labels.json"
+INPUT_VIDEO = "C:/Users/DELL/PycharmProjects/Pattern_Recognition/Bench_Press7.mp4"
 ```
 Run all cells to:
 - Load the trained model + scaler + labels
@@ -236,4 +235,4 @@ Per‑class P/R/F1 (support):
 
 ## 🔒 License & Academic Use
 
-This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms.
+This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms. For Penn Action, link to the source or provide your own captured data.
