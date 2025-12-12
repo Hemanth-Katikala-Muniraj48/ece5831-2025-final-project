@@ -236,4 +236,4 @@ Per‑class P/R/F1 (support):
 
 ## 🔒 License & Academic Use
 
-This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms. For Penn Action, link to the source or provide your own captured data.
+This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms.
