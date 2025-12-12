@@ -3,7 +3,7 @@
 > **ECE 5831 — Pattern Recognition & Neural Networks**  
 > **Student:** Hemanth Katikala Muniraj  
 > **Classes:** `bench`, `sit_ups`, `squat`  
-> **Goal:** Real‑time recognition of exercise type from webcam/video using MediaPipe Pose + pose‑feature engineering + a 2‑layer Bi‑LSTM. Includes a **squat‑only rep counter** based on knee‑angle hysteresis.
+> **Goal:** Real‑time recognition of exercise type from webcam/video using MediaPipe Pose + pose‑feature + a 2‑layer Bi‑LSTM. Includes a **squat‑only rep counter** based on knee‑angle hysteresis.
 
 ---
 
@@ -26,7 +26,7 @@
 ├─ train_sequence_nn.py                # Train 2×Bi‑LSTM on windowed pose features → best.pt, scaler, labels, results
 ├─ infer_on_video_bilstm.py            # Robust video inference + squat‑only reps + bench plausibility checks
 ├─ extract_ranges_to_csv_from_frames.py# Build ranges_dataset.csv from frame folders (bench/sit_ups/squat)
-├─ index_penn_flat_robust.py           # (Optional) Build ranges_dataset_grouped.csv from Penn Action .mat labels
+├─ csv_grouped.py           # (Optional) Build ranges_dataset_grouped.csv from Penn Action .mat labels
 ├─ runs/
 │   └─ train_bilstm/
 │       ├─ best.pt                     # Trained checkpoint (with config + labels)
@@ -105,7 +105,7 @@ Columns include: `lknee, rknee, lhip, rhip, lelbow, relbow, lshoulder, rshoulder
 ### B) From Penn Action label .mat files
 If you have `Penn_Action/labels/*.mat`, build a leakage‑safe index:
 ```bash
-python index_penn_flat_robust.py   # writes penn_labels_index.csv and prints targets
+python csv_grouped.py   # writes penn_labels_index.csv and prints targets
 # then run your extractor to produce ranges_dataset_grouped.csv
 ```
 
@@ -154,10 +154,11 @@ python infer_on_video_bilstm.py
 
 Open **[`final-project.ipynb`](./final-project.ipynb)** and edit:
 ```python
-MODEL_PATH  = "runs/train_bilstm/best.pt"
-SCALER_PATH = "runs/train_bilstm/scaler.joblib"
-LABELS_PATH = "runs/train_bilstm/labels.json"
-INPUT_VIDEO = "C:/Users/DELL/PycharmProjects/Pattern_Recognition/Bench_Press7.mp4"
+MODEL_PATH   = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/best.pt"     
+SCALER_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/scaler.joblib"
+LABELS_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/labels.json"  
+INPUT_VIDEO  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/Videos/Squat.mp4"  
+
 ```
 Run all cells to:
 - Load the trained model + scaler + labels
@@ -235,4 +236,4 @@ Per‑class P/R/F1 (support):
 
 ## 🔒 License & Academic Use
 
-This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms. For Penn Action, link to the source or provide your own captured data.
+This repository is for educational purposes for **ECE 5831**. If redistributing dataset frames, ensure compliance with the original dataset license/terms.
