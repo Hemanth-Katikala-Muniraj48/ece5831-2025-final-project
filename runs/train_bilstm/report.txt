@@ -1,0 +1,13 @@
+=== Classification Report (best model) ===
+              precision    recall  f1-score   support
+
+       bench      0.980     0.943     0.962       159
+     sit_ups      0.972     0.993     0.983       142
+       squat      0.985     0.994     0.990       337
+
+    accuracy                          0.981       638
+   macro avg      0.979     0.977     0.978       638
+weighted avg      0.981     0.981     0.981       638
+
+Val accuracy: 0.9812
+Best epoch: 36
