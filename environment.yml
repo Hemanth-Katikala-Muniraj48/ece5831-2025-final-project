@@ -1,0 +1,17 @@
+name: ece-5831-2025
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch
+      - mediapipe
+      - opencv-python
+      - numpy
+      - pandas
+      - scikit-learn==1.3.2
+      - joblib
+      - matplotlib
+      - scipy
