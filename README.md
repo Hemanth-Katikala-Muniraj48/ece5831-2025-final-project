@@ -9,11 +9,11 @@
 
 ## 📺 Deliverables
 
-- **Demo video (YouTube):** `TODO: https://youtu.be/...`
-- **Slide deck (Google Drive):** `TODO: https://drive.google.com/...`
-- **Report (IEEE PDF):** `TODO: https://drive.google.com/...`
-- **Dataset (Drive or instructions):** `TODO: https://drive.google.com/...`
-- **Interactive notebook:** [`final-project.ipynb`](./final-project.ipynb)
+- **Demo video (YouTube):** https://youtu.be/jvpRaWdcpO8
+- **Slide deck (Google Drive):** https://drive.google.com/drive/folders/11EpkiB-j9Q_hf-aJZ7W7bp8u7utnsOkP?usp=sharing
+- **Report (IEEE PDF):** https://drive.google.com/file/d/1HF94a-J7M0gZJjrfzHVoM8UDox2DTxAX/view?usp=sharing
+- **Dataset (Drive or instructions):** https://drive.google.com/file/d/1In402kmPKFH3HB3AxzTGHcSVsegxZ-2z/view?usp=sharing
+- **Interactive notebook:** (./final-project.ipynb)
 - **Annotated demo output:** `annotated_output.mp4` (created by the notebook or inference script)
 
 ---
