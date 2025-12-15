@@ -156,10 +156,10 @@ python infer_on_video_bilstm.py
 
 Open **[`final-project.ipynb`](./final-project.ipynb)** and edit:
 ```python
-MODEL_PATH   = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/best.pt"     
-SCALER_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/scaler.joblib"
-LABELS_PATH  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/runs/train_bilstm/labels.json"  
-INPUT_VIDEO  = r"C:/Users/DELL/Documents/ece5831-2025-assignments/ece5831-2025-final-project/Videos/Squat.mp4"  
+MODEL_PATH   = r"C:/Users/hemu8/OneDrive/Documents/ece5831-2025-final-project/runs/train_bilstm/best.pt"     
+SCALER_PATH  = r"C:/Users/hemu8/OneDrive/Documents/ece5831-2025-final-project/runs/train_bilstm/scaler.joblib"
+LABELS_PATH  = r"C:/Users/hemu8/OneDrive/Documents/ece5831-2025-final-project/runs/train_bilstm/labels.json"  
+INPUT_VIDEO  = r"C:/Users/hemu8/OneDrive/Documents/ece5831-2025-final-project/Videos/Squat.mp4"
 
 ```
 Run all cells to:
